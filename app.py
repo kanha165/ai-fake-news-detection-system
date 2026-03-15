@@ -136,8 +136,8 @@ to identify misleading or false information in news articles.
 
     selected = option_menu(
         menu_title="Navigation",
-        options=["Home","Analyze News","Insights","Technical Stack","Feedback"],
-        icons=["house","search","bar-chart","cpu","chat"],
+        options=["Home","Analyze News","Insights","Technical Stack","Feedback","Admin"],
+        icons=["house","search","bar-chart","cpu","chat","lock"],
         default_index=0
     )
 
@@ -330,5 +330,46 @@ elif selected == "Feedback":
             df.to_csv(file_path, mode="w", header=True, index=False)
 
         st.success("Thank you for your feedback!")
+        
+        
+# -------------------------------
+# ADMIN PANEL
+# -------------------------------
+
+elif selected == "Admin":
+
+    st.markdown("### 🔒 Admin Dashboard")
+
+    password = st.text_input("Enter Admin Password", type="password")
+
+    if password == "kanha123":   # yaha apna password rakh sakte ho
+
+        st.success("Access Granted")
+
+        file_path = "feedback.csv"
+
+        if os.path.exists(file_path):
+
+            df = pd.read_csv(file_path)
+
+            st.write("### 📊 Feedback Database")
+            st.dataframe(df)
+
+            st.write("Total Feedback:", len(df))
+
+            with open(file_path, "rb") as file:
+
+                st.download_button(
+                    label="Download Feedback CSV",
+                    data=file,
+                    file_name="feedback.csv",
+                    mime="text/csv"
+                )
+
+        else:
+            st.warning("No feedback yet")
+
+    elif password != "":
+        st.error("Wrong Password")        
         
         
