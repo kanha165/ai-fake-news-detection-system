@@ -32,11 +32,82 @@ vectorizer = pickle.load(open("tfidf_vectorizer.pkl", "rb"))
 # Custom CSS (FAANG Style UI)
 # -------------------------------
 
+# st.markdown("""
+# <style>
+
+# body{
+# background-color:#f8fafc;
+# }
+
+# .main-title{
+# font-size:42px;
+# font-weight:700;
+# color: #ffc857;
+# text-align:center;
+# }
+
+# .subtitle{
+# text-align:center;
+# color:white;
+# font-size:18px;
+# }
+
+# .header-box{
+# background:linear-gradient(90deg, #003049, #084c61);
+# padding:35px;
+# border-radius:12px;
+# margin-bottom:30px;
+# }
+
+# .card{
+# background:white;
+# padding:25px;
+# border-radius:15px;
+# box-shadow:0 5px 15px rgba(0,0,0,0.08);
+# margin-bottom:20px;
+# }
+
+# .result-real{
+# background:#e6f9f0;
+# border-left:6px solid #10b981;
+# padding:20px;
+# border-radius:10px;
+# font-size:20px;
+# }
+
+# .result-fake{
+# background:#ffeaea;
+# border-left:6px solid #ef4444;
+# padding:20px;
+# border-radius:10px;
+# font-size:20px;
+# }
+
+# .tech-card{
+# text-align:center;
+# padding:15px;
+# background:white;
+# border-radius:12px;
+# box-shadow:0 5px 10px rgba(0,0,0,0.05);
+# }
+
+# </style>
+# """, unsafe_allow_html=True)
 st.markdown("""
 <style>
 
 body{
 background-color:#f8fafc;
+}
+
+/* Sidebar color */
+section[data-testid="stSidebar"]{
+background-color:#a7bcb9;
+}
+
+/* Sidebar text color */
+section[data-testid="stSidebar"] *{
+color:white;
 }
 
 .main-title{
