@@ -36,7 +36,7 @@ vectorizer = pickle.load(open("tfidf_vectorizer.pkl", "rb"))
 # <style>
 
 # body{
-# background-color:#f8fafc;
+# background-color:#407088;
 # }
 
 # .main-title{
