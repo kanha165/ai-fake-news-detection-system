@@ -112,16 +112,15 @@ The dataset is balanced which helps improve model performance and reduce bias.
 
 # 🤖 Model Performance
 
-Best Model: **Linear Support Vector Machine (LinearSVC)**
+Best Model: **Logistic Regression**
 
-| Metric                    | Score      |
-| ------------------------- | ---------- |
-| Train Accuracy            | **99.53%** |
-| Test Accuracy             | **96.92%** |
-| Cross Validation Accuracy | **97.03%** |
+| Metric | Score |
+|------|------|
+| Train Accuracy | **96.93%** |
+| Test Accuracy | **95.49%** |
+| Cross Validation Accuracy | **95.70%** |
 
-The model demonstrates strong generalization and stable performance.
-
+The model demonstrates stable performance with minimal overfitting and good generalization on unseen data.
 ---
 
 # 🧠 Machine Learning Pipeline
