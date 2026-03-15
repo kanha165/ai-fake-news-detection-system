@@ -31,12 +31,21 @@ vectorizer = pickle.load(open("tfidf_vectorizer.pkl", "rb"))
 # -------------------------------
 # Custom CSS (FAANG Style UI)
 # -------------------------------
-
 st.markdown("""
 <style>
 
 body{
+background-color:#f8fafc;
+}
+
+/* Sidebar color */
+section[data-testid="stSidebar"]{
 background-color:#407088;
+}
+
+/* Sidebar text color */
+section[data-testid="stSidebar"] *{
+color:white;
 }
 
 .main-title{
@@ -148,23 +157,25 @@ to identify misleading or false information in news articles.
     st.write("Kanha Patidar")
 
     st.markdown("""
-<div style="display:flex; gap:25px; align-items:center;">
+<div style="display:flex; gap:20px;">
 
-<a href="https://github.com/kanha165" target="_blank">
-<img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" width="38">
+<a href="https://github.com/kanha165" target="_blank"
+style="background:white;padding:8px;border-radius:50%;">
+<img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" width="28">
 </a>
 
-<a href="https://www.linkedin.com/in/kanha-patidar-837421290/" target="_blank">
-<img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" width="38">
+<a href="https://www.linkedin.com/in/kanha-patidar-837421290/" target="_blank"
+style="background:white;padding:8px;border-radius:50%;">
+<img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" width="28">
 </a>
 
-<a href="mailto:kanhapatidar7251@gmail.com">
-<img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" width="38">
+<a href="mailto:kanhapatidar7251@gmail.com"
+style="background:white;padding:8px;border-radius:50%;">
+<img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" width="28">
 </a>
 
 </div>
 """, unsafe_allow_html=True)
-
 # -------------------------------
 # HOME PAGE
 # -------------------------------
