@@ -102,12 +102,21 @@ streamlit run app.py --server.port $PORT
 
 Dataset used: **WELFake Dataset**
 
-* Total News Articles: **71,537**
-* Real News: **36,509**
-* Fake News: **35,028**
+Due to GitHub file size limitations, the dataset is **not included in this repository**.
+
+You can download the dataset from Kaggle:
+
+https://www.kaggle.com/datasets/saurabhshahane/fake-news-classification
+
+After downloading, place the dataset file inside the **data/** folder before running the project.
+
+Dataset Details:
+
+- Total News Articles: **71,537**
+- Real News: **36,509**
+- Fake News: **35,028**
 
 The dataset is balanced which helps improve model performance and reduce bias.
-
 ---
 
 # 🤖 Model Performance
