@@ -176,6 +176,7 @@ style="background:white;padding:8px;border-radius:50%;">
 
 </div>
 """, unsafe_allow_html=True)
+
 # -------------------------------
 # HOME PAGE
 # -------------------------------
