@@ -97,7 +97,7 @@ st.markdown("""
 <style>
 
 body{
-background-color:#f8fafc;
+background-color:#407088;
 }
 
 /* Sidebar color */
